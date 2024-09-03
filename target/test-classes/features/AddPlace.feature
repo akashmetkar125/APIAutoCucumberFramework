@@ -1,6 +1,6 @@
 Feature: Validate Add Place API is working as expected
 
-@AddPlace
+@AddPlace @Regression
 Scenario Outline: To verify Place is added after calling Add Place API
 
 Given Add payload of add place API with "<name>" "<language>" "<address>"
@@ -17,7 +17,7 @@ Examples:
 # | BBHouse  | Hindi     | Sahyog Nagar       |
 
 
-@DeletePlace
+@DeletePlace @Regression
 Scenario: Verify Delete place API is working as expected
 
 Given Delete Place Payload
